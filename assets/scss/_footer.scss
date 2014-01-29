@@ -1,0 +1,55 @@
+.content-info {
+ 
+}
+
+
+.footer-sidebar {
+  @include clearfix();
+  color:$gray;
+  background-color: $military-light;
+  @include breakpoint($s2){
+    background: linear-gradient(to right, $military-light 0%,$military-light 33.333333333%,$military-dark 33.333333333%);
+  }
+
+  .widget{
+    @include clearfix();
+    padding:2em 1em;
+
+    &:last-child{
+      background-color: $military-dark;
+    }
+
+    @include breakpoint($s2){
+      width:33.333%;
+
+      float:left;
+      &:last-child{
+        width:auto;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.footer-copy{
+  padding:1em;
+  position: relative;
+  //background-color: $soldier;
+  &:before {
+    content:"";
+    position:absolute;
+    bottom:100%;
+    right:0;
+    width:0;
+    height:0;
+    background-color: $military;
+    border-left: 60px solid $military-light;
+    border-bottom: 60px solid $military;
+    @include breakpoint($s2){
+      right:66.666666%;
+    }
+  }
+
+  
+  
+}
