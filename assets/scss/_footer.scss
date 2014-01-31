@@ -32,8 +32,10 @@
 }
 
 .footer-copy{
-  padding:1em;
+  padding:1.25em;
   position: relative;
+  font-size: 0.875em;
+  color:#000;
   //background-color: $soldier;
   &:before {
     content:"";

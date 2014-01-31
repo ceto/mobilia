@@ -3055,8 +3055,10 @@ article.reference {
           background-color: transparent; } }
 
 .footer-copy {
-  padding: 1em;
-  position: relative; }
+  padding: 1.25em;
+  position: relative;
+  font-size: 0.875em;
+  color: #000; }
   .footer-copy:before {
     content: "";
     position: absolute;

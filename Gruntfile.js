@@ -14,6 +14,11 @@ module.exports = function(grunt) {
     },
     uglify: {
       dist: {
+        options: {
+          beautify: true,
+          mangle: false,
+          compress: false
+        },
         files: {
           'assets/js/scripts.min.js': [
             'assets/js/plugins/*.js',
