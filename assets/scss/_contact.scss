@@ -5,6 +5,10 @@
   height:0;
   overflow:hidden;
   transition: height .4s;
+  &.open{
+    //height:auto;
+  }
+
 }
 
 .contact-inner {
@@ -45,18 +49,31 @@ input[type="text"], input[type="email"], textarea{
   color:$soldier;
   line-height: 1.25em;
   padding:0.25em;
-  background-color: rgba(#fff,0.65);
+  background-color: rgba(#fff,0.5);
   width: 20em;
   max-width: 100%;
-  outline-color: $orange;
+  //outline-color: #fff;
+  outline: 0 solid #fff;
+  &:hover, &:focus {
+    background-color: rgba(#fff,0.65);
+    outline-color: $orange;
+
+  }
+
+}
+
+.submitbtn {
+  //float:right;
+  //display:block;
 }
 
 .btn {
   border:0;
+  display: inline-block;
   background-color: $brown;
   text-align: center;
-  color:#fff;
-  font-size: 2em;
+  color:$yellow;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1em;
@@ -64,4 +81,21 @@ input[type="text"], input[type="email"], textarea{
   &:hover, &:focus {
     background-color: $soldier;
   }
+}
+
+.actions {
+  @include clearfix();
+  text-align: right;
+  font-size: 1.5em;
+  width: 20em;
+  max-width: 100%;
+  @include breakpoint($s2) {
+    width: 27em;
+  }
+}
+
+.oki {
+  float:left;
+  padding-top: 3em;
+  font-size: 0.75em;
 }

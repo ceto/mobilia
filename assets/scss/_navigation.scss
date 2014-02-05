@@ -93,6 +93,7 @@
       }
     }
   }
+
 }
 
 
@@ -128,6 +129,9 @@
       border-bottom: 3px solid $orange;
       text-decoration: none;
     }
+  }
+  .active a {
+    border-bottom: 3px solid $orange;
   }
 
 }

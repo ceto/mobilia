@@ -100,7 +100,7 @@ if(!$human == 0){
       <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
       <input type="hidden" name="message_human" value="2">
       <input type="hidden" name="submitted" value="1">
-      <input type="submit" class="btn submitbtn" value="<?php _e('Elküldöm','roots'); ?>"> v. <span class="ion-android-call"></span> <a href="tel:0800221101">+36 70 7705653</a></p>
+      <input type="submit" class="btn submitbtn" value="<?php _e('Elküldöm','roots'); ?>">
       <div class="oki">*Kitöltése kötelező</div>
     </div>
   </form>

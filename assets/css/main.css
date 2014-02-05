@@ -2854,6 +2854,8 @@ img {
     .nav-main a:hover, .nav-main a:focus {
       border-bottom: 3px solid #f29a19;
       text-decoration: none; }
+  .nav-main .active a {
+    border-bottom: 3px solid #f29a19; }
 
 .nav-sub .nav-title {
   height: 60px;
@@ -2983,8 +2985,28 @@ article.reference {
     margin-left: 0;
     float: left; } }
 /* Off Canvas Navigation */
+.content-info a {
+  color: #f29a19;
+  font-weight: 700; }
+
+.duma {
+  color: #231f06;
+  display: block;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase; }
+
+a.telcsi {
+  color: #231f06;
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 0.75em;
+  letter-spacing: -0.025em; }
+
 .footer-sidebar {
-  color: #595959;
+  color: #e0e2d4;
   background-color: #e0e2d4; }
   .footer-sidebar:before, .footer-sidebar:after {
     content: " ";
@@ -2993,23 +3015,50 @@ article.reference {
     clear: both; }
   @media only screen and (min-width: 768px) {
     .footer-sidebar {
-      background: linear-gradient(to right, #e0e2d4 0%, #e0e2d4 33.33333%, #353429 33.33333%); } }
+      background: linear-gradient(to right, #e0e2d4 0%, #e0e2d4 33.33333%, #280004 33.33333%); } }
+  .footer-sidebar .callnow {
+    padding: 3em 2em 3em 1em;
+    text-align: right; }
+    @media only screen and (min-width: 768px) {
+      .footer-sidebar .callnow {
+        width: 33.333%;
+        float: left;
+        padding: 2em 2em 4em 1em; } }
+    @media only screen and (min-width: 1024px) {
+      .footer-sidebar .callnow {
+        padding: 3em 2em 4em 1em; } }
   .footer-sidebar .widget {
-    padding: 2em 1em; }
+    padding: 0 1em;
+    background-color: #280004; }
     .footer-sidebar .widget:before, .footer-sidebar .widget:after {
       content: " ";
       display: table; }
     .footer-sidebar .widget:after {
       clear: both; }
-    .footer-sidebar .widget:last-child {
-      background-color: #353429; }
+    @media only screen and (min-width: 480px) {
+      .footer-sidebar .widget {
+        padding: 2em 1em;
+        width: 33.333%;
+        float: left;
+        min-height: 18em; } }
     @media only screen and (min-width: 768px) {
       .footer-sidebar .widget {
-        width: 33.333%;
-        float: left; }
-        .footer-sidebar .widget:last-child {
-          width: auto;
-          background-color: transparent; } }
+        padding: 2em 1em 2em 2em;
+        width: 22.222%;
+        float: left;
+        background-color: transparent; } }
+    @media only screen and (min-width: 1024px) {
+      .footer-sidebar .widget {
+        padding: 3em 1em 3em 3em; } }
+    .footer-sidebar .widget h3 {
+      margin-top: 1em;
+      font-size: 1.5em;
+      line-height: 1.125em; }
+      @media only screen and (min-width: 480px) {
+        .footer-sidebar .widget h3 {
+          margin-top: 0; } }
+    .footer-sidebar .widget p {
+      margin-top: 0; }
 
 .footer-copy {
   padding: 1.25em;
@@ -3419,22 +3468,45 @@ input[type="text"], input[type="email"], textarea {
   color: #231f06;
   line-height: 1.25em;
   padding: 0.25em;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 20em;
   max-width: 100%;
-  outline-color: #f29a19; }
+  outline: 0 solid #fff; }
+  input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, textarea:hover, textarea:focus {
+    background-color: rgba(255, 255, 255, 0.65);
+    outline-color: #f29a19; }
 
 .btn {
   border: 0;
+  display: inline-block;
   background-color: #280004;
   text-align: center;
-  color: #fff;
-  font-size: 2em;
+  color: #f6ce3a;
+  font-size: 1.5em;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1em;
   padding: 0.5em 1em; }
   .btn:hover, .btn:focus {
     background-color: #231f06; }
+
+.actions {
+  text-align: right;
+  font-size: 1.5em;
+  width: 20em;
+  max-width: 100%; }
+  .actions:before, .actions:after {
+    content: " ";
+    display: table; }
+  .actions:after {
+    clear: both; }
+  @media only screen and (min-width: 768px) {
+    .actions {
+      width: 27em; } }
+
+.oki {
+  float: left;
+  padding-top: 3em;
+  font-size: 0.75em; }
 
 /*# sourceMappingURL=main.css.map */
