@@ -1,5 +1,4 @@
 <?php while (have_posts()) : the_post(); ?>
-
 <?php
   $actual=$post->ID;
   $group_terms = wp_get_object_terms($actual, 'reference-group', array (
@@ -13,7 +12,6 @@
   //$group = get_term( $term_id, 'reference-group' );
   $group=$group_terms[0];
 ?>
-
   <nav class="off-canvas-subnavigation">
     <a href="<?php echo get_permalink(16) ?>" class="bckbtn"><span class="ion-ios7-undo"></span></a>
     <a class="submenu-button" href="#menu">

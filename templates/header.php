@@ -9,7 +9,7 @@
     ?>
   </nav>
   <div class="othere">
-    <a href="#" class="mail"><span class="ion-email"></span></a>
     <a href="#" class="phone"><span class="ion-iphone"></span></a>
+    <a href="#" class="mail copener"><span class="ion-email"></span></a>
   </div>
 </header>
