@@ -2715,7 +2715,7 @@ html, body {
   height: 100%; }
 
 a {
-  color: #e0e2d4;
+  color: #f2f2f2;
   text-decoration: none; }
 
 a:hover, a:focus {
@@ -2742,7 +2742,7 @@ img {
     clear: both; }
 
 .banner {
-  background-color: #280004;
+  background-color: #2b221d;
   position: relative;
   text-align: right;
   line-height: 60px;
@@ -2870,7 +2870,7 @@ img {
   .nav-sub .submenu-button2:hover, .nav-sub .submenu-button2:focus {
     text-decoration: none;
     background-color: #fffeff;
-    color: #280004; }
+    color: #2b221d; }
 .nav-sub ul {
   margin: 0 0 0 0;
   padding: 0;
@@ -2880,7 +2880,7 @@ img {
   background-color: #f29a19;
   color: #fffeff; }
 .nav-sub li a {
-  color: #280004;
+  color: #2b221d;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   font-size: 1.125em;
@@ -2920,7 +2920,7 @@ img {
   font-size: 20px;
   line-height: 60px;
   vertical-align: middle;
-  background-color: #e0e2d4;
+  background-color: #f2f2f2;
   color: #595959;
   display: block;
   display: none; }
@@ -3001,13 +3001,13 @@ article.reference {
 a.telcsi {
   color: #231f06;
   font-weight: 700;
-  font-size: 4.5em;
-  line-height: 0.75em;
-  letter-spacing: -0.025em; }
+  font-size: 3.5em;
+  line-height: 1.125em;
+  text-transform: uppercase; }
 
 .footer-sidebar {
-  color: #e0e2d4;
-  background-color: #e0e2d4; }
+  color: #c4c6ab;
+  background-color: #f2f2f2; }
   .footer-sidebar:before, .footer-sidebar:after {
     content: " ";
     display: table; }
@@ -3015,10 +3015,9 @@ a.telcsi {
     clear: both; }
   @media only screen and (min-width: 768px) {
     .footer-sidebar {
-      background: linear-gradient(to right, #e0e2d4 0%, #e0e2d4 33.33333%, #280004 33.33333%); } }
+      background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 33.33333%, #2b221d 33.33333%); } }
   .footer-sidebar .callnow {
-    padding: 3em 2em 3em 1em;
-    text-align: right; }
+    padding: 3em 2em 3em 1em; }
     @media only screen and (min-width: 768px) {
       .footer-sidebar .callnow {
         width: 33.333%;
@@ -3029,7 +3028,7 @@ a.telcsi {
         padding: 3em 2em 4em 1em; } }
   .footer-sidebar .widget {
     padding: 0 1em;
-    background-color: #280004; }
+    background-color: #2b221d; }
     .footer-sidebar .widget:before, .footer-sidebar .widget:after {
       content: " ";
       display: table; }
@@ -3073,15 +3072,15 @@ a.telcsi {
     width: 0;
     height: 0;
     background-color: #c4c6ab;
-    border-left: 60px solid #e0e2d4;
+    border-left: 60px solid #f2f2f2;
     border-bottom: 60px solid #c4c6ab; }
     @media only screen and (min-width: 768px) {
       .footer-copy:before {
         right: 66.666666%; } }
 
 .hero {
-  background-image: url("../img/hero.jpg");
-  background-position: center center;
+  background-image: url("../img/hero_small.jpg");
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 300px;
@@ -3090,25 +3089,31 @@ a.telcsi {
   padding: 1em; }
   @media only screen and (min-width: 768px) {
     .hero {
-      padding: 1em 33% 1em 1em; } }
+      background-image: url("../img/hero_med.jpg");
+      padding: 1em 20%; } }
   @media only screen and (min-width: 1024px) {
     .hero {
-      padding: 1em 50% 1em 10%; } }
+      background-image: url("../img/hero_opt.jpg");
+      padding: 1em 30%; } }
 
 .hero-content {
   vertical-align: middle;
   display: table-cell;
-  text-align: right; }
+  text-align: center; }
 
 .hero-text {
-  font-size: 5em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
   line-height: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
   background-color: rgba(217, 221, 28, 0.85);
   box-shadow: -0.125em 0 0 rgba(217, 221, 28, 0.85), 0.125em 0 0 rgba(217, 221, 28, 0.85);
   color: #fff; }
+  @media only screen and (min-width: 768px) {
+    .hero-text {
+      font-size: 5em;
+      line-height: 1.25em; } }
 
 .refstarthead {
   text-align: left;
@@ -3116,21 +3121,29 @@ a.telcsi {
   margin: 0 auto;
   padding: 0 0 2em; }
   .refstarthead h1 {
-    color: #280004;
-    font-size: 8em;
+    color: #2b221d;
+    font-size: 2.5em;
     line-height: 1em;
     text-transform: uppercase;
     font-weight: 700;
     margin: 0; }
+    @media only screen and (min-width: 768px) {
+      .refstarthead h1 {
+        font-size: 8em;
+        line-height: 1em; } }
   .refstarthead h2 {
     max-width: 1280px;
     color: #353429;
     margin: 0;
-    font-size: 2.75em;
+    font-size: 1.25em;
     line-height: 1em;
     font-weight: 700; }
+    @media only screen and (min-width: 768px) {
+      .refstarthead h2 {
+        font-size: 2.75em;
+        line-height: 1em; } }
   .refstarthead span {
-    color: #e0e2d4; }
+    color: #f2f2f2; }
 
 .refstarter-list {
   padding: 2em 0.5em;
@@ -3165,23 +3178,17 @@ a.telcsi {
   @media only screen and (min-width: 480px) {
     .refstarter {
       width: calc(50% - 0.25em); } }
-  @media only screen and (min-width: 768px) {
-    .refstarter {
-      width: calc(33.3333333% - 0.5em);
-      margin-bottom: 0.5em; } }
   @media only screen and (min-width: 1024px) {
     .refstarter {
-      width: calc(25% - 0.5em); } }
-  @media only screen and (min-width: 1280px) {
-    .refstarter {
-      width: calc(20% - 1em); } }
+      width: calc(25% - 0.5em);
+      margin-bottom: 0.5em; } }
   .refstarter header {
     text-align: left;
     position: absolute;
     top: -100px;
     left: 0;
     right: 0;
-    background-color: #fffeff;
+    background-color: #f2f2f2;
     opacity: 0;
     transition: all .2s linear;
     z-index: 2;
@@ -3200,8 +3207,8 @@ a.telcsi {
     opacity: 1;
     top: 50px; }
   .refstarter:hover h3, .refstarter:focus h3 {
-    background-color: #fffeff;
-    color: #280004; }
+    background-color: #f2f2f2;
+    color: #2b221d; }
   .refstarter:hover .illustration, .refstarter:focus .illustration {
     transform: scale(1.025); }
   .refstarter .descr {
@@ -3237,8 +3244,8 @@ a.telcsi {
     font-weight: 400;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0.25em;
-    color: #fffeff;
-    background-color: #280004;
+    color: #2b221d;
+    background-color: #f2f2f2;
     padding: 0 12px;
     line-height: 50px;
     height: 50px;
@@ -3258,11 +3265,15 @@ a.telcsi {
     margin: 0 auto;
     padding: 4em 2em 2em; }
     .about-us .tevhead h1 {
-      font-size: 8em;
+      font-size: 3em;
       line-height: 1em;
       text-transform: uppercase;
       font-weight: 700;
       margin: 0; }
+      @media only screen and (min-width: 768px) {
+        .about-us .tevhead h1 {
+          font-size: 8em;
+          line-height: 1em; } }
   .about-us .tevlist {
     max-width: 1280px;
     margin: 0 auto;
@@ -3286,20 +3297,18 @@ a.telcsi {
     width: 50%;
     margin: 0 auto;
     text-align: center; }
-    .about-us .tevifig img {
-      border-radius: 50%; }
   .about-us .tevdesc h3 {
     text-align: center;
     font-size: 2em;
     line-height: 1.125em;
     margin: 1em auto;
-    max-width: 380px; }
+    max-width: 390px; }
   .about-us .tevdesc p {
     margin: 0 auto;
     max-width: 530px; }
 
 .reference-list {
-  background-color: #280004;
+  background-color: #2b221d;
   font-size: 0;
   line-height: 0;
   text-align: justify;
@@ -3420,7 +3429,7 @@ article.reference header {
 
 .contact-row {
   background-color: #f6ce3a;
-  color: #280004;
+  color: #2b221d;
   height: 0;
   overflow: hidden;
   transition: height .4s; }
@@ -3479,7 +3488,7 @@ input[type="text"], input[type="email"], textarea {
 .btn {
   border: 0;
   display: inline-block;
-  background-color: #280004;
+  background-color: #2b221d;
   text-align: center;
   color: #f6ce3a;
   font-size: 1.5em;

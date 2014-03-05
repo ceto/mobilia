@@ -17,16 +17,14 @@
 a.telcsi {
   color:$soldier;
   font-weight:700;
-  font-size: 4.5em;
-  line-height: 0.75em;
-  
-  letter-spacing: -0.025em;
-  
+  font-size: 3.5em;
+  line-height: 1.125em;
+  text-transform:uppercase;
 }
 
 .footer-sidebar {
   @include clearfix();
-  color:$military-light;
+  color:$military;
   background-color: $military-light;
   @include breakpoint($s2){
     background: linear-gradient(to right, $military-light 0%,$military-light 33.333333333%,$brown 33.333333333%);
@@ -34,7 +32,6 @@ a.telcsi {
 
   .callnow{
     padding:3em 2em 3em 1em;
-    text-align: right;
     @include breakpoint($s2){
       width:33.333%;
       float:left;

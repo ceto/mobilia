@@ -1,6 +1,6 @@
 .hero {
-  background-image: url('../img/hero.jpg');
-  background-position: center center;
+  background-image: url('../img/hero_small.jpg');
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 300px; 
@@ -9,26 +9,34 @@
   padding:1em;
 
   @include breakpoint($s2){
-    padding:1em 33% 1em 1em;
+    background-image: url('../img/hero_med.jpg');
+    padding:1em 20%;
   }
   @include breakpoint($s3){
-    padding:1em 50% 1em 10%;
+    background-image: url('../img/hero_opt.jpg');
+    padding:1em 30%;
   }
 }
 .hero-content {
   vertical-align: middle;
   display: table-cell;
-  text-align: right;
+  text-align: center;
+
 }
 .hero-text{
-  font-size: 5em;
+
   font-family: $sans-serif;
+  font-size: 3em;
   line-height: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
   background-color: rgba($green,0.85);
   box-shadow: -0.125em 0 0 rgba($green,0.85), 0.125em 0 0 rgba($green,0.85);
   color:#fff;
+  @include breakpoint($s2){
+    font-size: 5em;
+    line-height: 1.25em;
+  }
 }
 
 .refstarthead{
@@ -38,20 +46,28 @@
   padding:0 0 2em;
   h1{
     color:$brown;
-    font-size: 8em;
+    font-size: 2.5em;
     line-height: 1em;
     text-transform: uppercase;
     font-weight: 700;
     margin:0;
+    @include breakpoint($s2){
+      font-size: 8em;
+      line-height: 1em;
+    }
   }
   h2 {
     max-width: $s4;
     color:$military-dark;
     margin:0;
-    font-size: 2.75em;
+    font-size: 1.25em;
     line-height: 1em;
     //text-transform: uppercase;
     font-weight: 700;
+    @include breakpoint($s2){
+      font-size: 2.75em;
+      line-height: 1em;
+    }
 
   }
   span {
@@ -101,19 +117,19 @@
   @include breakpoint($s1){
     width:calc(50% - 0.25em);
   }
-  @include breakpoint($s2){
-    width:calc(33.3333333% - 0.5em);
-    margin-bottom:0.5em;
-  }
   @include breakpoint($s3){
     width:calc(25% - 0.5em);
+    margin-bottom:0.5em;
   }
-  @include breakpoint($s4){
-    width:calc(20% - 1em);
-  }
-  @include breakpoint($s5){
-    //width:calc(20% - 2em);
-  }
+  // @include breakpoint($s3){
+  //   width:calc(25% - 0.5em);
+  // }
+  // @include breakpoint($s4){
+  //   width:calc(20% - 1em);
+  // }
+  // @include breakpoint($s5){
+  //   //width:calc(20% - 2em);
+  // }
   
 
   header {
@@ -121,7 +137,7 @@
     position: absolute;
     top:-100px;
     left:0; right:0;
-    background-color: rgba($butter,1);
+    background-color: $military-light;
     opacity: 0;
     transition: all .2s linear;
     z-index: 2;
@@ -148,7 +164,7 @@
     }
     h3 {
       //top:100%;
-      background-color: $butter;
+      background-color: $military-light;
       color:$brown;
       &:after{
       }
@@ -193,8 +209,8 @@
     font-weight: 400;
     font-family: $sans-serif;
     padding:0.25em;
-    color:$butter;
-    background-color: rgba($brown,1);
+    color:$brown;
+    background-color: $military-light;
     padding:0 12px;
     line-height: 50px;
     height:50px;
@@ -217,11 +233,15 @@
     margin:0 auto;
     padding:4em 2em 2em;
     h1{
-      font-size: 8em;
+      font-size: 3em;
       line-height: 1em;
       text-transform: uppercase;
       font-weight: 700;
       margin:0;
+      @include breakpoint($s2){
+        font-size: 8em;
+        line-height: 1em;
+      }
     }
   }
   .tevlist {
@@ -249,7 +269,7 @@
     margin:0 auto;
     text-align: center;
     img{
-      border-radius: 50%;
+      //border-radius: 50%;
     }
   }
   .tevdesc{
@@ -259,7 +279,7 @@
       font-size: 2em;
       line-height: 1.125em;
       margin:1em auto;
-      max-width: 380px;
+      max-width: 390px;
     }
     p{
       margin:0 auto;
