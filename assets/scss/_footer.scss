@@ -19,7 +19,12 @@ a.telcsi {
   font-weight:700;
   font-size: 3.5em;
   line-height: 1.125em;
+  font-weight:800;
   text-transform:uppercase;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
 }
 
 .footer-sidebar {
@@ -50,7 +55,7 @@ a.telcsi {
       padding:2em 1em;
       width:33.333%;
       float:left;
-      min-height:18em;
+      min-height:23em;
       //background-color: transparent;
     }
     @include breakpoint($s2){
@@ -64,7 +69,7 @@ a.telcsi {
     }
     h3 {
       margin-top:1em;
-      font-size: 1.5em;
+      font-size: 2em;
       line-height: 1.125em;
       @include breakpoint($s1){
         margin-top:0;  

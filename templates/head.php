@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,800,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <?php wp_head(); ?>
 

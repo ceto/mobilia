@@ -5,14 +5,14 @@
   //word-break: break-all;
   font-size: 0;
   line-height: 0;
-  text-align: justify;
+  text-align: left;
   margin:0 auto;
-  padding:1px 0 0 0;
+  padding:5px 0 0 0;
   @include breakpoint($s1){
-    padding:1px 0 0 0;
+    padding:0 0 0 0;
   }
   @include breakpoint($s2){
-    //padding:1em 0.5em 1em 1em;
+    padding:10px 15px;
   }
   @include breakpoint($s3){
      //padding:2em 1em 1em 2em;
@@ -32,7 +32,8 @@
   display:inline-block;
   overflow:hidden;
   position:relative;
-  margin-bottom:1px;
+  //margin-bottom:1px;
+  margin:5px 10px;
   &:hover, &:focus {
     .ref-desc {
       opacity:1;
@@ -44,19 +45,20 @@
 
 
   @include breakpoint($s1){
-    width:calc(50% - 1px);
+    margin:10px;
+    width:calc(50% - 20px);
   }
   @include breakpoint($s2){
-    width:calc(33.3333333333% - 1px);
+    width:calc(33.3333333333% - 20px);
   }
   @include breakpoint($s3){
-    width:calc(25% - 1px);
+    width:calc(25% - 20px);
   }
   @include breakpoint($s4){
-    width:calc(20% - 1px);
+    width:calc(20% - 20px);
   }
   @include breakpoint($s5){
-    width:calc(16.66666666% - 1px);
+    width:calc(16.66666666% - 20px);
   }
 }
 .ref-thumb{
@@ -119,9 +121,14 @@ article.reference header{
     width:33.333%;
   }
 }
+.reference-content{
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
 .reference-title {
   margin-top:0;
   line-height:1.125em;
+  //font-weight:800;
 }
 
 .reference-addcont{

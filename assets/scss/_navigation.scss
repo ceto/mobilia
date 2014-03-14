@@ -159,7 +159,7 @@
 
 
   ul{
-    margin:0 0 0 0;
+    margin:0 20px 0 0;
     padding:0;
     list-style:none;
     margin-top:60px;
@@ -170,11 +170,13 @@
   
   li{
    // margin-left: 60px;
+   margin-bottom:10px;
   }
 
   li.active a{
     background-color: $orange;
     color:$butter;
+
   }
 
   li a {
@@ -185,7 +187,7 @@
     //text-transform: uppercase;
     font-size: 1.125em;
     line-height: 1em;
-    padding:1em;
+    padding:0.5em;
     &:hover, &:focus {
       text-decoration: none;
       background-color: $orange;
@@ -230,6 +232,7 @@ article.reference {
 
 }
 .submenu-button {
+  display:none;
   width:60px;
   height:60px;
   padding: 0 0;
@@ -254,7 +257,7 @@ article.reference {
     display:none;
   }
   @include breakpoint($s2) {
-    display: block; 
+    display:none; 
     width:260px;
     transform: translate(-100px, 100px) rotate(-90deg);
     .ici {

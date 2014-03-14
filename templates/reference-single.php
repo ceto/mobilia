@@ -13,7 +13,7 @@
   $group=$group_terms[0];
 ?>
   <nav class="off-canvas-subnavigation">
-    <a href="<?php echo get_permalink(16) ?>" class="bckbtn"><span class="ion-ios7-undo"></span></a>
+    <a href="<?php echo get_permalink(16) ?>" class="bckbtn"><span class="ion-grid"></span></a>
     <a class="submenu-button" href="#menu">
       <span class="ion-more ici"></span>
       <span class="cat-name"><?php echo $group_name; ?></span>
@@ -34,7 +34,11 @@
   ));
 ?>
   <nav class="nav-sub">
-    <h2 class="nav-title"><a href="#" class="submenu-button2"><span class="ion-android-more ici"></span> <?php echo $group_name; ?> </a></h2>
+    <h2 class="nav-title">
+      <a href="#" class="submenu-button2">
+        <!--span class="ion-android-more ici"></span-->
+        <?php echo $group_name; ?>
+      </a></h2>
     <ul>
       <?php while ($the_brothas->have_posts()) : $the_brothas->the_post(); ?>
         <li class="<?php echo ($actual==get_the_id())?'active':''; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>

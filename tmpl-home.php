@@ -25,7 +25,7 @@ Template Name: Home Template
 
 <section class="about-us">
   <header class="tevhead">
-    <h1>Hogyan dolgozunk</h1>
+    <h1>Hogyan dolgozunk?</h1>
   </header>
   <ol class="tevlist">
     <li class="tevekenyseg">

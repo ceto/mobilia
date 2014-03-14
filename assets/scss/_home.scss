@@ -28,7 +28,7 @@
   font-family: $sans-serif;
   font-size: 3em;
   line-height: 1.25em;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   background-color: rgba($green,0.85);
   box-shadow: -0.125em 0 0 rgba($green,0.85), 0.125em 0 0 rgba($green,0.85);
@@ -49,7 +49,7 @@
     font-size: 2.5em;
     line-height: 1em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     margin:0;
     @include breakpoint($s2){
       font-size: 8em;
@@ -229,14 +229,14 @@
   
 
   .tevhead{
-    max-width: $s4;
+    max-width: $s5;
     margin:0 auto;
     padding:4em 2em 2em;
     h1{
       font-size: 3em;
       line-height: 1em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       margin:0;
       @include breakpoint($s2){
         font-size: 8em;
@@ -278,8 +278,9 @@
       text-align: center;
       font-size: 2em;
       line-height: 1.125em;
+      font-weight:800;
       margin:1em auto;
-      max-width: 390px;
+      max-width: 420px;
     }
     p{
       margin:0 auto;

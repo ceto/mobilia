@@ -9,7 +9,7 @@
     ?>
   </nav>
   <div class="othere">
-    <a href="#" class="phone"><span class="ion-iphone"></span></a>
+    <a href="tel:+36203174323" class="phone"><span class="ion-iphone"></span></a>
     <a href="#" class="mail copener"><span class="ion-email"></span></a>
   </div>
 </header>

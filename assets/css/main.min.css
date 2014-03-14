@@ -2732,7 +2732,7 @@ img.mfp-img {
   box-sizing: border-box; }
 
 html, body {
-  font: normal 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 16px/24px "Open Sans", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   color: #595959;
   background-color: #c4c6ab;
@@ -2880,7 +2880,7 @@ img {
   .nav-main a {
     color: #fff;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     display: inline-block;
     border-bottom: 3px solid transparent;
     font-weight: 700;
@@ -2907,20 +2907,22 @@ img {
     background-color: #fffeff;
     color: #2b221d; }
 .nav-sub ul {
-  margin: 0 0 0 0;
+  margin: 0 20px 0 0;
   padding: 0;
   list-style: none;
   margin-top: 60px; }
+.nav-sub li {
+  margin-bottom: 10px; }
 .nav-sub li.active a {
   background-color: #f29a19;
   color: #fffeff; }
 .nav-sub li a {
   color: #2b221d;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   display: block;
   font-size: 1.125em;
   line-height: 1em;
-  padding: 1em; }
+  padding: 0.5em; }
   .nav-sub li a:hover, .nav-sub li a:focus {
     text-decoration: none;
     background-color: #f29a19;
@@ -2946,6 +2948,7 @@ img {
     background-color: #f6ce3a; }
 
 .submenu-button {
+  display: none;
   width: 60px;
   height: 60px;
   padding: 0 0;
@@ -2966,7 +2969,7 @@ img {
     display: none; }
   @media only screen and (min-width: 768px) {
     .submenu-button {
-      display: block;
+      display: none;
       width: 260px;
       -webkit-transform: translate(-100px, 100px) rotate(-90deg);
       -ms-transform: translate(-100px, 100px) rotate(-90deg);
@@ -3044,7 +3047,10 @@ a.telcsi {
   font-weight: 700;
   font-size: 3.5em;
   line-height: 1.125em;
+  font-weight: 800;
   text-transform: uppercase; }
+  a.telcsi:hover, a.telcsi:focus {
+    text-decoration: none; }
 
 .footer-sidebar {
   color: #c4c6ab;
@@ -3082,7 +3088,7 @@ a.telcsi {
         padding: 2em 1em;
         width: 33.333%;
         float: left;
-        min-height: 18em; } }
+        min-height: 23em; } }
     @media only screen and (min-width: 768px) {
       .footer-sidebar .widget {
         padding: 2em 1em 2em 2em;
@@ -3094,7 +3100,7 @@ a.telcsi {
         padding: 3em 1em 3em 3em; } }
     .footer-sidebar .widget h3 {
       margin-top: 1em;
-      font-size: 1.5em;
+      font-size: 2em;
       line-height: 1.125em; }
       @media only screen and (min-width: 480px) {
         .footer-sidebar .widget h3 {
@@ -3146,10 +3152,10 @@ a.telcsi {
   text-align: center; }
 
 .hero-text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 3em;
   line-height: 1.25em;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   background-color: rgba(217, 221, 28, 0.85);
   -webkit-box-shadow: -0.125em 0 0 rgba(217, 221, 28, 0.85), 0.125em 0 0 rgba(217, 221, 28, 0.85);
@@ -3170,7 +3176,7 @@ a.telcsi {
     font-size: 2.5em;
     line-height: 1em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0; }
     @media only screen and (min-width: 768px) {
       .refstarthead h1 {
@@ -3271,7 +3277,7 @@ a.telcsi {
     color: #595959;
     font-size: 0.875em;
     line-height: 1.4em;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; }
   .refstarter .illustration {
     position: absolute;
     top: 0;
@@ -3301,7 +3307,7 @@ a.telcsi {
     margin: 0;
     text-align: left;
     font-weight: 400;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     padding: 0.25em;
     color: #2b221d;
     background-color: #f2f2f2;
@@ -3321,14 +3327,14 @@ a.telcsi {
   .about-us:after {
     clear: both; }
   .about-us .tevhead {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 4em 2em 2em; }
     .about-us .tevhead h1 {
       font-size: 3em;
       line-height: 1em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       margin: 0; }
       @media only screen and (min-width: 768px) {
         .about-us .tevhead h1 {
@@ -3361,8 +3367,9 @@ a.telcsi {
     text-align: center;
     font-size: 2em;
     line-height: 1.125em;
+    font-weight: 800;
     margin: 1em auto;
-    max-width: 390px; }
+    max-width: 420px; }
   .about-us .tevdesc p {
     margin: 0 auto;
     max-width: 530px; }
@@ -3371,9 +3378,9 @@ a.telcsi {
   background-color: #2b221d;
   font-size: 0;
   line-height: 0;
-  text-align: justify;
+  text-align: left;
   margin: 0 auto;
-  padding: 1px 0 0 0; }
+  padding: 5px 0 0 0; }
   .reference-list:before, .reference-list:after {
     content: " ";
     display: table; }
@@ -3381,7 +3388,10 @@ a.telcsi {
     clear: both; }
   @media only screen and (min-width: 480px) {
     .reference-list {
-      padding: 1px 0 0 0; } }
+      padding: 0 0 0 0; } }
+  @media only screen and (min-width: 768px) {
+    .reference-list {
+      padding: 10px 15px; } }
   .reference-list:after {
     content: "";
     display: inline-block;
@@ -3389,11 +3399,11 @@ a.telcsi {
     width: 100%; }
 
 .ref-mini {
-  font: normal 16px/24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 16px/24px "Open Sans", Helvetica, Arial, sans-serif;
   display: inline-block;
   overflow: hidden;
   position: relative;
-  margin-bottom: 1px; }
+  margin: 5px 10px; }
   .ref-mini:hover .ref-desc, .ref-mini:focus .ref-desc {
     opacity: 1; }
   .ref-mini:hover .ref-thumb, .ref-mini:focus .ref-thumb {
@@ -3402,24 +3412,25 @@ a.telcsi {
     transform: scale(1.1); }
   @media only screen and (min-width: 480px) {
     .ref-mini {
-      width: -webkit-calc(50% - 1px);
-      width: calc(50% - 1px); } }
+      margin: 10px;
+      width: -webkit-calc(50% - 20px);
+      width: calc(50% - 20px); } }
   @media only screen and (min-width: 768px) {
     .ref-mini {
-      width: -webkit-calc(33.3333333333% - 1px);
-      width: calc(33.3333333333% - 1px); } }
+      width: -webkit-calc(33.3333333333% - 20px);
+      width: calc(33.3333333333% - 20px); } }
   @media only screen and (min-width: 1024px) {
     .ref-mini {
-      width: -webkit-calc(25% - 1px);
-      width: calc(25% - 1px); } }
+      width: -webkit-calc(25% - 20px);
+      width: calc(25% - 20px); } }
   @media only screen and (min-width: 1280px) {
     .ref-mini {
-      width: -webkit-calc(20% - 1px);
-      width: calc(20% - 1px); } }
+      width: -webkit-calc(20% - 20px);
+      width: calc(20% - 20px); } }
   @media only screen and (min-width: 1600px) {
     .ref-mini {
-      width: -webkit-calc(16.66666666% - 1px);
-      width: calc(16.66666666% - 1px); } }
+      width: -webkit-calc(16.66666666% - 20px);
+      width: calc(16.66666666% - 20px); } }
 
 .ref-thumb {
   -webkit-transition: -webkit-transform .4s linear;
@@ -3482,6 +3493,10 @@ article.reference header {
   @media only screen and (min-width: 1024px) {
     article.reference header {
       width: 33.333%; } }
+
+.reference-content {
+  font-size: 0.875em;
+  line-height: 1.4em; }
 
 .reference-title {
   margin-top: 0;
