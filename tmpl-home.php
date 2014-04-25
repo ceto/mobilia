@@ -30,7 +30,7 @@ Template Name: Home Template
   <ol class="tevlist">
     <li class="tevekenyseg">
       <figure class="tevifig">
-        <img src="http://ceto.no-ip.org/mobilia/wp-content/uploads/2014/03/ikon_1.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ikon_1.png" alt="">
       </figure>
       <div class="tevdesc">
         <h3>1. Helyszini felmérés és ajánlat készítés</h3>
@@ -43,7 +43,7 @@ Template Name: Home Template
     </li>
     <li class="tevekenyseg">
       <figure class="tevifig">
-        <img src="http://ceto.no-ip.org/mobilia/wp-content/uploads/2014/03/ikon_2.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ikon_2.png" alt="">
       </figure>
       <div class="tevdesc">
         <h3>2. Számítógépes tervezés - látványtervezés</h3>
@@ -55,7 +55,7 @@ Template Name: Home Template
     </li>
     <li class="tevekenyseg">
       <figure class="tevifig">
-        <img src="http://ceto.no-ip.org/mobilia/wp-content/uploads/2014/03/ikon_3.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ikon_3.png" alt="">
       </figure>
       <div class="tevdesc">
         <h3>3. Gyártás és kivitelezés saját üzemben</h3>
@@ -67,7 +67,7 @@ Template Name: Home Template
     </li>
     <li class="tevekenyseg">
       <figure class="tevifig">
-        <img src="http://ceto.no-ip.org/mobilia/wp-content/uploads/2014/03/ikon_4.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ikon_4.png" alt="">
       </figure>
       <div class="tevdesc">
         <h3>4. Szállítás, beszerelés és kulcsrakész átadás</h3>

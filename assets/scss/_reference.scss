@@ -39,7 +39,7 @@
       opacity:1;
     }
     .ref-thumb {
-      transform:scale(1.1)
+      //transform:scale(1.05)
     }
   }
 
@@ -62,27 +62,32 @@
   }
 }
 .ref-thumb{
-  transition:transform .4s linear;
+  transition:transform .2s linear;
   backface-visibility:hidden;
   //position: absolute;
   //width:100%;
 }
 .ref-desc{
-  transition:opacity .4s linear;
+  transition:opacity .1s linear;
   position: absolute;
   top:0; bottom:0;
   left:0; right:0;
-  background-color: rgba($butter,1);
+  background-color: $orange;
   opacity:0;
-  text-align: center;
+  //text-align: center;
   padding:1em;
 }
 
 .ref-title{
-  color:$military-dark;
-  position:relative;
-  margin-top:50%;
-  transform:translateY(-50%);
+  color:$brown;
+  margin:0;
+  font-size: 1.333em;
+  line-height: 1.25;
+  font-weight: 700;
+  text-transform: uppercase;
+  //position:relative;
+  //margin-top:50%;
+  //transform:translateY(-50%);
 }
 
 
@@ -97,9 +102,9 @@ article.reference {
 }
 .reference-figure {
   margin-bottom: 1em;
-  margin-top: 60px;
+  margin-top: 90px;
   @include breakpoint($s2){
-    margin-bottom: 0;
+    //margin-bottom: 0;
 
     text-align: right;
     max-width: 55%;
@@ -113,7 +118,7 @@ article.reference header{
 
   padding:0 1em;
   @include breakpoint($s2){
-    margin-top: 60px;
+    margin-top: 90px;
     width:45%;
     float:right;
   }

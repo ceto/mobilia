@@ -225,14 +225,20 @@
   @include clearfix();
   background-color: $soldier;
   color:$military;
-  padding:2em 0;
+  padding:2em 0 4em;
   
 
   .tevhead{
     max-width: $s5;
     margin:0 auto;
     padding:4em 2em 2em;
+
     h1{
+      background-image:url('../img/logo_light.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      padding-top:55px;
+      
       font-size: 3em;
       line-height: 1em;
       text-transform: uppercase;

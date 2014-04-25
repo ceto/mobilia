@@ -32,7 +32,8 @@ a.telcsi {
   color:$military;
   background-color: $military-light;
   @include breakpoint($s2){
-    background: linear-gradient(to right, $military-light 0%,$military-light 33.333333333%,$brown 33.333333333%);
+    //background: linear-gradient(to right, $military-light 0%,$military-light 33.333333333%,$brown 33.333333333%);
+    background-color: brown;
   }
 
   .callnow{
