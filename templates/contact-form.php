@@ -22,16 +22,17 @@
   //user posted variables
   $name = $_POST['message_name'];
   $email = $_POST['message_email'];
-  $betreff = $_POST['message_betreff'];
+  $msubject = $_POST['message_subject'];
   $tel = $_POST['message_tel'];
   $message = $_POST['message_text'];
   $human = $_POST['message_human'];
-  $subjecto = $_REQUEST['ap_id'];
+
+  $nyomta = $_REQUEST['submitted'];
 
   //php mailer variables
   //$to = get_option('admin_email');
   $to = 'szabogabi@gmail.com';
-  $subject = "Message from ".get_bloginfo('name');
+  $subject = "Webes ajánlatkérés ".get_bloginfo('name');
 
   $headers = "From: " . strip_tags($email) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
@@ -53,7 +54,7 @@ if(!$human == 0){
         }
         else //ready to go!
         {
-          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Subject: '.$betreff.'<br />'.$message;
+          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) generate_response("success", $message_sent); //message sent!
             else generate_response("error", $message_unsent); //message wasn't sent
@@ -65,7 +66,7 @@ if(!$human == 0){
     if ($_POST['submitted']) generate_response("error", $missing_content);
 
 ?>
-<section id="respond" class="contact-row <?php echo ( is_page(2) )?'open':''; ?>">
+<section id="respond" class="contact-row <?php echo ( is_page(2) || $nyomta==1 )?'open':''; ?>">
   <div class="contact-inner">
   <h2 class="ctitle">Kérjen ajánlatot most!</h2>
   <?php echo $response; ?>
@@ -73,7 +74,7 @@ if(!$human == 0){
 
     <div class="controls">
         <label for="message_name">Név*</label>
-        <input type="text" required placeholder="" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
+        <input type="text" arequired placeholder="" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
     </div>
 
     <div class="controls">
@@ -83,21 +84,15 @@ if(!$human == 0){
 
     <div class="controls">
       <label for="message_email">E-Mail cím*</label>
-      <input type="email" required placeholder="" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
-    </div>
-
-    <div class="controls">
-      <label for="message_email">Tárgy</label>
-      <input type="text" placeholder="" id="message_betreff" name="message_betreff" value="<?php echo $subjecto; ?>">
+      <input type="email" arequired placeholder="" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
     </div>
 
     <div class="controls">
         <label for="message_text">Üzenet*</label>
-        <textarea required placeholder="" rows="7" id="message_text" name="message_text" value="<?php echo $_POST['message_text']; ?>"></textarea>
+        <textarea arequired placeholder="" rows="7" id="message_text" name="message_text"><?php echo $_POST['message_text']; ?></textarea>
     </div>
 
     <div class="actions">
-      <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
       <input type="hidden" name="message_human" value="2">
       <input type="hidden" name="submitted" value="1">
       <input type="submit" class="btn submitbtn" value="<?php _e('Elküldöm','roots'); ?>">

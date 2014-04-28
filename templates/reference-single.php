@@ -33,10 +33,21 @@
     ),
   ));
 ?>
+<?php
+ $imci = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'mediumfree' ); 
+    // $imcismall = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'wallsmall' ); 
+    // $imcimedium = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'wallmedium' ); 
+    // $imcigreat = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'wallgreat' ); 
+?>
+<style>
+  .nav-sub .nav-title {
+    background-image:url('<?php echo $imci['0']; ?>');
+  }
+</style>
   <nav class="nav-sub">
     <h2 class="nav-title">
       <a href="#" class="submenu-button2">
-        <!--span class="ion-android-more ici"></span-->
+        
         <?php echo $group_name; ?>
       </a></h2>
     <ul>
@@ -49,7 +60,7 @@
 
   <article <?php post_class(); ?>>
     <figure class="reference-figure">
-      <?php the_post_thumbnail(mediumfree); ?>
+      <?php the_post_thumbnail('mediumfree'); ?>
     </figure>
     <header>
       <h1 class="reference-title"><?php the_title(); ?></h1>

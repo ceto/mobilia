@@ -24,10 +24,10 @@
 
 }
 .hero-text{
-
+  //position: relative;
   font-family: $sans-serif;
   font-size: 3em;
-  line-height: 1.25em;
+  line-height: 1.4;
   font-weight: 800;
   text-transform: uppercase;
   background-color: rgba($green,0.85);
@@ -35,8 +35,22 @@
   color:#fff;
   @include breakpoint($s2){
     font-size: 5em;
-    line-height: 1.25em;
+    line-height: 1.4;
   }
+}
+
+.enter{
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  display: inline-block;
+  bottom:20px;
+  left:48%;
+  color:$orange;
+  &:hover, &:focus {
+    color:rgba($white,0.85);
+  }
+
 }
 
 .refstarthead{
@@ -137,7 +151,7 @@
     position: absolute;
     top:-100px;
     left:0; right:0;
-    background-color: $military-light;
+    background-color: $orange;
     opacity: 0;
     transition: all .2s linear;
     z-index: 2;
@@ -151,7 +165,7 @@
       position: absolute;
       //z-index: 3;
       left:0;top:100%;
-      border-left: 20px solid $butter;
+      border-left: 20px solid $orange;
       border-bottom: 20px solid transparent;
       transition: all .2s linear;
     } 
@@ -164,20 +178,20 @@
     }
     h3 {
       //top:100%;
-      background-color: $military-light;
-      color:$brown;
+      background-color: $orange;
+      color:$white;
       &:after{
       }
     }
     .illustration{
-      transform:scale(1.025);
+      //transform:scale(1.025);
     }
   }
 
 
   .descr {
-    padding:12px 12px 25px 12px;
-    color: $gray;
+    padding:0 12px 25px 12px;
+    color: $brown;
     font-size:0.875em;
     line-height:1.4em;
     font-family:$sans-serif;
@@ -206,11 +220,12 @@
     opacity:1;
     margin:0;
     text-align: left;
-    font-weight: 400;
+    font-weight: 700;
     font-family: $sans-serif;
+    text-transform: uppercase;
     padding:0.25em;
     color:$brown;
-    background-color: $military-light;
+    background-color: $orange;
     padding:0 12px;
     line-height: 50px;
     height:50px;
@@ -223,7 +238,7 @@
 
 .about-us {
   @include clearfix();
-  background-color: $soldier;
+  background-color: $gray-dark;
   color:$military;
   padding:2em 0 4em;
   

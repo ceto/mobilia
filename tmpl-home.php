@@ -5,23 +5,52 @@ Template Name: Home Template
 ?>
 
 
-<section class="refstarter-list">
+<section class="refstarter-list"  id="refstarter-list">
   <header class="refstarthead">
     <h1>Mit csinálunk?</h1>
     <h2><span>Közületi bútorokat és üzletberendezéseket gyártunk,</span> kimelkedő minőségben és megfizethető áron</h2>
   </header>
-  <?php for ($i=1; $i < 5; $i++ ) { ?>
-    <a href="#" class="refstarter">
+    <a href="?reference=casino-tatabanyan" class="refstarter">
         <header>
           <div>
             <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
           a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
           </div>
         </header>
-        <h3>Étterem</h3> 
-        <div class="illustration" style="background-image:url('http://lorempixel.com/6<?php echo $i*10; ?>/6<?php echo $i*10; ?>/nightlife')"></div>
+        <h3>Éttermek</h3> 
+        <div class="illustration" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/img/kat_etterem.jpg')"></div>
     </a>
-  <?php } ?></section>
+    <a href="?reference=made-in-cafe" class="refstarter">
+        <header>
+          <div>
+            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
+          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+          </div>
+        </header>
+        <h3>Kávézók</h3> 
+        <div class="illustration" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/img/kat_kavezo.jpg')"></div>
+    </a>
+    <a href="?reference=radi-pekseg" class="refstarter">
+        <header>
+          <div>
+            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
+          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+          </div>
+        </header>
+        <h3>Pékségek</h3> 
+        <div class="illustration" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/img/kat_pekseg.jpg')"></div>
+    </a>
+    <a href="?reference=etyeki-boraszat-vendegtere" class="refstarter">
+        <header>
+          <div>
+            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
+          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+          </div>
+        </header>
+        <h3>Minden más</h3> 
+        <div class="illustration" style="background-image:url('<?php echo get_stylesheet_directory_uri();?>/assets/img/kat_mindenmas.jpg')"></div>
+    </a>
+  </section>
 
 <section class="about-us">
   <header class="tevhead">

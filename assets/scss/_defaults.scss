@@ -4,14 +4,22 @@
 html, body {
   font: normal 16px/24px $sans-serif;
   text-rendering: optimizeLegibility;
-  color: $gray;
-  background-color: $military;
+  color: $military-dark;
+  background-color: $white;
   height: 100%;
   
 }
+body {
+
+   &.fixednav{
+    @include breakpoint($s2) {
+      margin-top:60px;
+    }
+   }
+}
 
 a {
-  color: $military-light;
+  color: $orange;
   text-decoration: none;
 }
 
