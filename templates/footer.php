@@ -6,7 +6,13 @@
     <?php dynamic_sidebar('sidebar-footer'); ?>
   </div>
   <div class="footer-copy">
-    © 2014 Mobilia Shops & Homes | Site by <a href="http://hydrogene.hu">HYDROGENE</a>
+    <div class="left">
+      © 2014 Mobilia Shops & Homes | Site by <a href="http://hydrogene.hu">HYDROGENE</a>
+    </div>
+    <div class="right">
+      <a href="#pagetop"><i class="ion-arrow-up-a"></i></a>
+    </div>
   </div>
+
 </footer>
 <?php wp_footer(); ?>

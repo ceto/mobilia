@@ -111,19 +111,20 @@ article.reference {
     float:left;
   }
   @include breakpoint($s3){
-    max-width: 66.666%;
+    max-width: 60%;
   }
 }
 article.reference header{
 
   padding:0 1em;
   @include breakpoint($s2){
+    padding:0 1em 0 30px;
     margin-top: 90px;
     width:45%;
     float:right;
   }
   @include breakpoint($s3){
-    width:33.333%;
+    width:40%;
   }
 }
 .reference-content{
@@ -146,6 +147,6 @@ article.reference header{
     max-width:55%;
   }
   @include breakpoint($s3){
-    max-width:66.666%;
+    max-width:60%;
   }
 }

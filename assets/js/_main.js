@@ -50,6 +50,22 @@ var UTIL = {
 
 $(document).ready(UTIL.loadEvents);
 
+//*********** Smooth scroll *************
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 120
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 
 var showMenu = function() {
   $('body').toggleClass("active-subnav");
@@ -171,6 +187,32 @@ jQuery(document).ready(function($) {
       $('.banner').removeClass('fixed');
       $('body').removeClass('fixednav');
     }
+  });
+
+  /****** Magnific Zoom Gallery *********/
+  $('.gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true,
+      titleSrc: function(item) {
+        return item.el.find('img').attr('alt') + ' &middot; <a class="image-source-link" href="'+item.el.attr('href')+'" target="_blank">Teljes méret</a>';
+      }
+    },
+    gallery: {
+      enabled: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    }
+    
   });
 });
 

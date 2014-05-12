@@ -85,7 +85,7 @@
 
   }
   span {
-    color:$military-light;
+    color:$orange;
   }
 }
 
@@ -195,6 +195,9 @@
     font-size:0.875em;
     line-height:1.4em;
     font-family:$sans-serif;
+    p{
+      margin-top:0;
+    }
   }
 
 

@@ -30,12 +30,17 @@ a.telcsi {
 .footer-sidebar {
   @include clearfix();
   color:$brown;
-  //background-color: $military-light;
   background-color: $orange;
-
+  background-image: url(../img/balna-fej.png), url(../img/balna-farok.png);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+  background-size: auto 80px;
+  padding-bottom: 60px;
   @include breakpoint($s2){
-    //background: linear-gradient(to right, $military-light 0%,$military-light 33.333333333%,$brown 33.333333333%);
-    //background-color: $orange;
+    background-size: auto, auto;
+  }
+  @include breakpoint($s3){
+    background-position: 10% bottom, 90% bottom;
   }
 
 
@@ -89,26 +94,34 @@ a.telcsi {
 }
 
 .footer-copy{
+  @include clearfix();
   padding:1.25em;
   position: relative;
   font-size: 0.875em;
   color:$orange;
   background-color: $black;
-  &:before {
-    content:"";
-    position:absolute;
-    bottom:100%;
-    right:0;
-    width:0;
-    height:0;
-    background-color: $military;
-    border-left: 60px solid $white;
-    border-bottom: 60px solid $black;
-    @include breakpoint($s2){
-      right:66.666666%;
+  .left {
+    float:left;
+    width: calc(100% - 60px)
+  }
+  .right{
+    float:right;
+    
+    a {
+      background-color: $orange;
+      display: block;
+      text-align: center;
+      font-size: 2em;
+      line-height: 40px;
+      width:40px;
+      height: 40px;
+      &:hover, &:focus {
+        background-color: $yellow;
+        color:$black;
+      }
+
+
+
     }
   }
-
-  
-  
 }

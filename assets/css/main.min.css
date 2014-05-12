@@ -2507,13 +2507,25 @@ a.telcsi {
 
 .footer-sidebar {
   color: #2b221d;
-  background-color: #F29A19; }
+  background-color: #F29A19;
+  background-image: url(../img/balna-fej.png), url(../img/balna-farok.png);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 80px;
+  background-size: auto 80px;
+  padding-bottom: 60px; }
   .footer-sidebar:before, .footer-sidebar:after {
     content: " ";
     display: table; }
   .footer-sidebar:after {
     clear: both; }
-  @media only screen and (min-width: 768px) { }
+  @media only screen and (min-width: 768px) {
+    .footer-sidebar {
+      -webkit-background-size: auto, auto;
+      background-size: auto, auto; } }
+  @media only screen and (min-width: 1024px) {
+    .footer-sidebar {
+      background-position: 10% bottom, 90% bottom; } }
   .footer-sidebar .callnow {
     padding: 3em 2em 3em 1em; }
     @media only screen and (min-width: 768px) {
@@ -2561,19 +2573,28 @@ a.telcsi {
   font-size: 0.875em;
   color: #F29A19;
   background-color: #181818; }
-  .footer-copy:before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    width: 0;
-    height: 0;
-    background-color: #C4C6AB;
-    border-left: 60px solid #fefefe;
-    border-bottom: 60px solid #181818; }
-    @media only screen and (min-width: 768px) {
-      .footer-copy:before {
-        right: 66.66667%; } }
+  .footer-copy:before, .footer-copy:after {
+    content: " ";
+    display: table; }
+  .footer-copy:after {
+    clear: both; }
+  .footer-copy .left {
+    float: left;
+    width: -webkit-calc(100% - 60px);
+    width: calc(100% - 60px); }
+  .footer-copy .right {
+    float: right; }
+    .footer-copy .right a {
+      background-color: #F29A19;
+      display: block;
+      text-align: center;
+      font-size: 2em;
+      line-height: 40px;
+      width: 40px;
+      height: 40px; }
+      .footer-copy .right a:hover, .footer-copy .right a:focus {
+        background-color: #F6CE3A;
+        color: #181818; }
 
 .hero {
   background-image: url('../img/hero_small.jpg');
@@ -2653,7 +2674,7 @@ a.telcsi {
         font-size: 2.75em;
         line-height: 1em; } }
   .refstarthead span {
-    color: #f2f2f2; }
+    color: #F29A19; }
 
 .refstarter-list {
   padding: 2em 0.5em;
@@ -2734,6 +2755,8 @@ a.telcsi {
     font-size: 0.875em;
     line-height: 1.4em;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
+    .refstarter .descr p {
+      margin-top: 0; }
   .refstarter .illustration {
     position: absolute;
     top: 0;
@@ -2940,18 +2963,19 @@ article.reference:after {
       float: left; } }
   @media only screen and (min-width: 1024px) {
     .reference-figure {
-      max-width: 66.666%; } }
+      max-width: 60%; } }
 
 article.reference header {
   padding: 0 1em; }
   @media only screen and (min-width: 768px) {
     article.reference header {
+      padding: 0 1em 0 30px;
       margin-top: 90px;
       width: 45%;
       float: right; } }
   @media only screen and (min-width: 1024px) {
     article.reference header {
-      width: 33.333%; } }
+      width: 40%; } }
 
 .reference-content {
   font-size: 0.875em;
@@ -2972,7 +2996,7 @@ article.reference header {
       max-width: 55%; } }
   @media only screen and (min-width: 1024px) {
     .reference-addcont {
-      max-width: 66.666%; } }
+      max-width: 60%; } }
 
 .contact-row {
   background-color: #F6CE3A;

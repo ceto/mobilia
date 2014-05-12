@@ -9,7 +9,7 @@
     get_template_part('templates/header');
   ?>
   <?php get_template_part('templates/contact','form'); ?>
-  <div class="document" role="document">
+  <div class="document" role="document"  id="pagetop">
       <?php get_template_part('templates/section','top'); ?>
       <main class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>

@@ -13,8 +13,13 @@ Template Name: Home Template
     <a href="?reference=casino-tatabanyan" class="refstarter">
         <header>
           <div>
-            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
-          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+            <div class="descr">
+              <p>
+              Cégünk referenciájában a megalakulásunk óta kiemelt jelentőségűek a gyorsétteremláncok asztalosipari
+              kivitelezési munkái.</p>
+              <p>A nagyforgalmú étkezőhelyeknél mindig fontos a tartós, minőségi munka és a frekventált
+              helyszínek miatt a rugalmas kivitelezői hozzáállás.</p>
+            </div>
           </div>
         </header>
         <h3>Éttermek</h3> 
@@ -23,8 +28,14 @@ Template Name: Home Template
     <a href="?reference=made-in-cafe" class="refstarter">
         <header>
           <div>
-            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
-          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+            <div class="descr">
+              <p>
+              Gyorsétkezdék mellett a kávézók kialakításában szereztünk a legtöbb tapasztalatot.
+              Kisebb kávézó pultok gyártásától kezdve a bárok teljes teljes berendezésének kivitelezéséig felkészülten vállalunk.</p>
+              <p>
+              Kiemelt helyszínek, igényes anyagok, reprezentatív megjelenés jellemzi a megrendelői elvárásokat, amelynek minden körülmények között megfelelünk.
+              </p>
+              </div>
           </div>
         </header>
         <h3>Kávézók</h3> 
@@ -33,8 +44,12 @@ Template Name: Home Template
     <a href="?reference=radi-pekseg" class="refstarter">
         <header>
           <div>
-            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
-          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+            <div class="descr">
+              <p>Gyorsan elindítaná vállalkozását, esetleg becsatlakozna egy meglévő franchiseba, akkor mi szívesen állunk rendelkezésre!
+              </p>
+              <p>Több éve sikeresen alakítunk ki és újítunk fel pékségeket legyen az utcafrontra nyíló belvárosi üzlethelyiségben
+              vagy egy szupermarket előterében.</p>
+            </div>
           </div>
         </header>
         <h3>Pékségek</h3> 
@@ -43,8 +58,13 @@ Template Name: Home Template
     <a href="?reference=etyeki-boraszat-vendegtere" class="refstarter">
         <header>
           <div>
-            <div class="descr">Nisi erat porttitor elyszíni felmérés és árajánlatkészítés mely tartalmazza a bútorok,
-          a bártechnológia, a konyhatechnológia, ligula, eget lacinia odio sem nec elit.</div>
+            <div class="descr">
+              <p>Iroda, benzinkút, divatüzlet, bár, hotel lobby? Ezeket is szívesen vállaljuk!
+              Számunkra a minőségi munka és a pontos határidő mellett az ügyfél a legfontosabb.
+              </p>
+              <p>Nyitottak vagyunk minden olyan asztalosipari munkára ami nagyforgalmú üzletekkel,
+              közületi üzletberendezéssekel, irodabútorozással kapcsolatos.</p>
+            </div>
           </div>
         </header>
         <h3>Minden más</h3> 
