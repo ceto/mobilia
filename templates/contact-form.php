@@ -3,21 +3,21 @@
   $response = "";
 
   //function to generate response
-  function generate_response($type, $message){
+  // function generate_response($type, $message){
     
-    global $response;
+  //   global $response;
 
-    if($type == "success") $response = "<div class='success'>{$message}</div>";
-    else $response = "<div class='error'>{$message}</div>";
+  //   if($type == "success") $response = "<div class='success'>{$message}</div>";
+  //   else $response = "<div class='error'>{$message}</div>";
     
-  }
+  // }
 
   //response messages
-  $not_human       = "Human verification incorrect.";
-  $missing_content = "Please supply all information.";
-  $email_invalid   = "Email Address Invalid.";
-  $message_unsent  = "Message was not sent. Try Again.";
-  $message_sent    = "Thanks! Your message has been sent.";
+  $not_human       = "Ellenőrzés sikertelen. Próbálkozzon újra!";
+  $missing_content = "A *-al jelöltmezők kitöltése kötelező.";
+  $email_invalid   = "Érvénytelen e-mail cím";
+  $message_unsent  = "Üzenet küldése nem sikerült. Próbálkozzon újra!";
+  $message_sent    = "Köszönjük! Üzenetét elküldtük.";
 
   //user posted variables
   $name = $_POST['message_name'];
@@ -40,24 +40,28 @@
   $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
   
 if(!$human == 0){
-    if($human != 2) generate_response("error", $not_human); //not human!
-    else {
+    if($human != 2) {
+      $response = '<div class="error">'.$not_human.'</div>';
+    } else {
       
       //validate email
       if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-        generate_response("error", $email_invalid);
+        $response = '<div class="error">'.$email_invalid.'</div>';
       else //email is valid
       {
         //validate presence of name and message
         if(empty($name) || empty($message) || empty($tel)){
-          generate_response("error", $missing_content);
+          $response = '<div class="error">'.$missing_content.'</div>';
         }
         else //ready to go!
         {
-          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.$message;
+          $message='Név: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
-            if($sent) generate_response("success", $message_sent); //message sent!
-            else generate_response("error", $message_unsent); //message wasn't sent
+            if($sent) {
+              $response = '<div class="success">'.$message_sent.'</div>';
+            } else {
+              $response = '<div class="error">'.$message_unsent.'</div>';
+            }
         }
       }
     }
@@ -84,12 +88,12 @@ if(!$human == 0){
 
     <div class="controls">
       <label for="message_email">E-Mail cím*</label>
-      <input type="email" arequired placeholder="" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
+      <input type="email" required placeholder="" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
     </div>
 
     <div class="controls">
         <label for="message_text">Üzenet*</label>
-        <textarea arequired placeholder="" rows="7" id="message_text" name="message_text"><?php echo $_POST['message_text']; ?></textarea>
+        <textarea required placeholder="" rows="7" id="message_text" name="message_text"><?php echo $_POST['message_text']; ?></textarea>
     </div>
 
     <div class="actions">
