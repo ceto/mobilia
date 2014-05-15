@@ -1,5 +1,6 @@
 .contact-row {
   @include clearfix();
+
   background-color: $yellow;
   color:$brown;
   height:0;
@@ -8,7 +9,6 @@
 
   &.open{
     //height:auto;
-
   }
 
 }

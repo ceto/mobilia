@@ -150,7 +150,14 @@ jQuery(document).ready(function($) {
 
 var resizeHero = function() {
   $('.hero').height($(window).height()-($('.banner').offset().top + $('.banner').height()));
-  $('.contact-row.open').height($(window).height()-($('.banner').offset().top + $('.banner').height()));
+
+  if ( $(window).height() > 800 ) {
+    //alert('magas');
+    $('.contact-row.open').height($(window).height()-($('.banner').offset().top + $('.banner').height()));
+  } else {
+    $('.contact-row.open').height('800');
+  }
+
   //$('.contact-row.open').css('min-height',($(window).height()-($('.banner').offset().top + $('.banner').height())));
 };
 
@@ -168,9 +175,11 @@ jQuery(document).ready(function($) {
       //$('.contact-row').css('min-height',0);
 
     } else {
-      $('.contact-row').height($(window).height()-($('.banner').offset().top + $('.banner').height()));
-      //$('.contact-row.open').css('min-height',($(window).height()-($('.banner').offset().top + $('.banner').height())));
-
+      if ( $(window).height() > 800 ) {
+        $('.contact-row').height($(window).height()-($('.banner').offset().top + $('.banner').height()));
+       } else {
+          $('.contact-row').height('800');
+      }
     }
   });
 

@@ -47,6 +47,7 @@ function initialize() {
   var mapOptions = {
     zoom: 16,
     center: brooklyn,
+    scrollwheel: false,
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
     },
