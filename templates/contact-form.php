@@ -31,7 +31,7 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'info@mobilia.hu';
+  $to = 'szabogabi@gmail.com';
   $subject = "Webes ajánlatkérés ".get_bloginfo('name');
 
   $headers = "From: " . strip_tags($email) . "\r\n";

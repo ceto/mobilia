@@ -1,8 +1,15 @@
 <?php while (have_posts()) : the_post(); ?>
+  <style>
+  article {
+    max-width: 768px;
+    margin:0 auto;
+    padding:4rem 1rem;
+  }
+  </style>
   <article <?php post_class(); ?>>
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
-      <?php get_template_part('templates/entry-meta'); ?>
+      <?php //get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-content">
       <?php the_content(); ?>
