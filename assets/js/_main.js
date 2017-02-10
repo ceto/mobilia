@@ -185,16 +185,18 @@ jQuery(document).ready(function($) {
 
   /************* Man navigation Fixing ***********/
   var top = $('.banner').offset().top - parseFloat($('.banner').css('marginTop').replace(/auto/, 0)) + 30;
-  //var top=200; 
+  //var top=200;
   $(window).scroll(function (event) {
     var y = $(this).scrollTop();
     //console.log(y+'-puna');
     if (y >= top) {
       $('.banner').addClass('fixed');
       $('body').addClass('fixednav');
+      $('.eusec').addClass('dontshow');
     } else {
       $('.banner').removeClass('fixed');
       $('body').removeClass('fixednav');
+      $('.eusec').removeClass('dontshow');
     }
   });
 
@@ -221,7 +223,7 @@ jQuery(document).ready(function($) {
         return element.find('img');
       }
     }
-    
+
   });
 });
 

@@ -23,6 +23,7 @@
   </div><!-- /.wrap -->
 
   <?php get_template_part('templates/footer'); ?>
+  <?php get_template_part('templates/eu'); ?>
 
 </body>
 </html>

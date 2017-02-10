@@ -4,12 +4,12 @@
 
   //function to generate response
   // function generate_response($type, $message){
-    
+
   //   global $response;
 
   //   if($type == "success") $response = "<div class='success'>{$message}</div>";
   //   else $response = "<div class='error'>{$message}</div>";
-    
+
   // }
 
   //response messages
@@ -31,19 +31,19 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'szabogabi@gmail.com';
+  $to = 'galbiro@gmail.com';
   $subject = "Webes ajánlatkérés ".get_bloginfo('name');
 
   $headers = "From: " . strip_tags($email) . "\r\n";
   $headers .= "Reply-To: ". strip_tags($email) . "\r\n";
   $headers .= "MIME-Version: 1.0\r\n";
   $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-  
+
 if(!$human == 0){
     if($human != 2) {
       $response = '<div class="error">'.$not_human.'</div>';
     } else {
-      
+
       //validate email
       if(!filter_var($email, FILTER_VALIDATE_EMAIL))
         $response = '<div class="error">'.$email_invalid.'</div>';
@@ -65,8 +65,8 @@ if(!$human == 0){
         }
       }
     }
-  } 
-  else 
+  }
+  else
     if ($_POST['submitted']) generate_response("error", $missing_content);
 
 ?>
@@ -104,4 +104,4 @@ if(!$human == 0){
     </div>
   </form>
   </div>
-</section><!-- /.contact-row -->  
+</section><!-- /.contact-row -->

@@ -1,0 +1,15 @@
+.eusec {
+  position: fixed;
+  right:0;
+  bottom:0;
+  height:150px;
+  width:214;
+  transition: bottom .4s;
+  &.dontshow {
+    bottom:-150px;
+  }
+  img {
+    width:214;
+    height:150px;
+  }
+}
